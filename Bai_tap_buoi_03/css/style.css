@@ -1,0 +1,64 @@
+body {
+    background-color: #333;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: #a1a1a1;
+    padding: 10px;
+    border-radius: 4px;
+    height: auto;
+}
+
+.content-area {
+    background-color: #bbb;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-area {
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content-label {
+    color: #555;
+    font-size: 14px;
+}
+
+.content-placeholder {
+    width: 60px;
+    height: 20px;
+    background-color: #999;
+    margin: 15px auto;
+}
+
+/* ------------- CSS  Baitap--------------- */
+.img-container{
+    margin-left: 56px !important;
+}
+.ex-content-01 {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: start;
+   
+}
+.ex-content-02 {
+    display: flex;
+    grid-template-columns: auto !important;
+    gap: 10px;
+    
+}
