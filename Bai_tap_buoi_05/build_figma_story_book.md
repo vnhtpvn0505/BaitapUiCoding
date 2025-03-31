@@ -1,14 +1,18 @@
 # Design System - Figma to StoryBook
-##  Bước 1.    Cài đặt plugin kết nối storybook Figma
-### https://www.chromatic.com/docs/figma-plugin/ -Storybook  Connect
-### story.to.design
 
-##  Bước 2.   Publish link StoryBook
-### 1.  Login to  https://www.chromatic.com/apps 
-### 2.  Tạo Projeccts mới trên Github
-### 3.   Add Project => Choose from Github Project => Chọn Project đã tạo trên Github => Chọn Storybook Project
-### 4.   Run cmd npm install --save-dev chromatic
-### 4.   Add code vào  file package.json
+## Bước 1. Cài đặt plugin kết nối Storybook với Figma
+### [Storybook Connect](https://www.chromatic.com/docs/figma-plugin/)
+### [story.to.design](https://story.to.design)
+
+## Bước 2. Publish link StoryBook
+### 1. Đăng nhập vào [Chromatic](https://www.chromatic.com/apps)
+### 2. Tạo Projects mới trên Github
+### 3. Add Project → Chọn từ Github Project → Chọn Project đã tạo trên Github → Chọn Storybook Project
+### 4. Chạy lệnh cài đặt Chromatic:
+```sh
+npm install --save-dev chromatic
+```
+### 5. Thêm code vào file `package.json`
 ```json
 {
   "name": "demo-storybook",
@@ -38,7 +42,12 @@
     "react-dom": "^19.1.0"
   }
 }
-``` 
-### 5.   Chạy lệnh    npx storybook init
-### 5.   Chạy lệnh    npx chromatic --project-token=c3146ffd-b275-46b2-ab61-2a24bcb2ec49
-
+```
+### 6. Khởi tạo Storybook
+```sh
+npx storybook init
+```
+### 7. Chạy Chromatic để publish Storybook
+```sh
+npx chromatic --project-token=c3146ffd-b275-46b2-ab61-2a24bcb2ec49
+```
